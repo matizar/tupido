@@ -1,5 +1,42 @@
 @import 'design/variables';
+:root{
+    --main          : #16A6AB;
+    --ground        : #94B5B5;
+}
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --dSun      : #EDF2F2;
+        --sun       : #C9DAD9;
+        --oGround   : #A6C1C1;
+        --uGround   : #7A9494;
+        --moon      : #485757;
+        --dMoon     : #1C2020;
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --dSun      : #1C2020;
+        --sun       : #485757;
+        --oGround   : #7A9494;
+        --uGround   : #A6C1C1;
+        --moon      : #C9DAD9;
+        --dMoon     : #EDF2F2;
+    }
+}
 body{
-    background-color: $deepSun;
-    color: $deepMoon;
+    background-color: var(--dSun);
+    color: var(--dMoon);
+}
+.cta{
+    &.github{
+        background-color: var(--main);
+        a{
+            color: var(--dSun);
+        }
+    }
+}
+section{
+    &#development{
+        background-color: var(--sun);
+    }
 }
