@@ -1,0 +1,80 @@
+{
+    "en":{
+        "monthLabel": "Month",
+        "weekLabel": "Week",
+        "months": [
+            "",
+            "MonthName01",
+            "MonthName02",
+            "MonthName03",
+            "MonthName04",
+            "MonthName05",
+            "MonthName06",
+            "MonthName07",
+            "MonthName08",
+            "MonthName09",
+            "MonthName10",
+            "MonthName11",
+            "MonthName12",
+            "MonthName13",
+            "MonthName14"
+        ],
+        "week": [
+            "",
+            "DayName01",
+            "DayName02",
+            "DayName03",
+            "DayName04",
+            "DayName05",
+            "DayName06",
+            "DayName07",
+            "DayName08",
+            "DayName09"
+        ]
+    },
+    "es" :{
+        "monthLabel": "Mes",
+        "weekLabel": "Semana",
+        "months": [
+            "",
+            "MonthName01",
+            "MonthName02",
+            "MonthName03",
+            "MonthName04",
+            "MonthName05",
+            "MonthName06",
+            "MonthName07",
+            "MonthName08",
+            "MonthName09",
+            "MonthName10",
+            "MonthName11",
+            "MonthName12",
+            "MonthName13",
+            "MonthName14"
+        ],
+        "week": [
+            "",
+            "DayName01",
+            "DayName02",
+            "DayName03",
+            "DayName04",
+            "DayName05",
+            "DayName06",
+            "DayName07",
+            "DayName08",
+            "DayName09"
+        ]
+    },
+    "fr": {
+        "months": []
+    },
+    "it": {
+        "months": []
+    },
+    "pt": {
+        "months": []
+    },
+    "de": {
+        "months": []
+    }
+} 

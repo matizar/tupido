@@ -17,6 +17,13 @@ body{
         }
     }
 }
+.row{
+    display: flex;
+}
+.value {
+    padding: 1em;
+    box-sizing: border-box;
+}
 nav{
     ul{
         &#mainMenu{
@@ -25,6 +32,20 @@ nav{
                 display: block;
             }
         }
+    }
+}
+.today-page{
+    .month-label{
+        display: block;
+        padding: 0.5em;
+    }
+    .today-number{
+        padding: 1em;
+        display: block;
+    }
+    .year-number{
+        display: block;
+        padding: 0.5em;
     }
 }
 section{
@@ -48,6 +69,11 @@ section{
         width: 640px;
     }
 }
+@media screen and(max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
 @media screen and(min-width: 769px)and(max-width: 1024px) {
     .container {
         width: 768px;
@@ -57,14 +83,32 @@ section{
     .container {
         width: 1024px;
     }
+    .value{
+        width: 700px;
+    }
+    .app{
+        width: 320px;
+    }
 }
 @media screen and(min-width: 1201px)and(max-width: 1600px) {
     .container {
         width: 1200px;
     }
+    .value {
+        width: 720px;
+    }
+    .app {
+        width: 480px;
+    }
 }
 @media screen and(min-width: 1601px){
     .container {
         width: 1600px;
+    }
+    .value {
+        width: 1000px;
+    }
+    .app {
+        width: 600px;
     }
 }

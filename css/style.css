@@ -27,6 +27,18 @@ body {
   text-decoration: none;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.value {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 nav ul#mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +47,21 @@ nav ul#mainMenu {
 
 nav ul#mainMenu li {
   display: block;
+}
+
+.today-page .month-label {
+  display: block;
+  padding: 0.5em;
+}
+
+.today-page .today-number {
+  padding: 1em;
+  display: block;
+}
+
+.today-page .year-number {
+  display: block;
+  padding: 0.5em;
 }
 
 section {
@@ -63,6 +90,15 @@ section h2 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     width: 768px;
@@ -73,17 +109,35 @@ section h2 {
   .container {
     width: 1024px;
   }
+  .value {
+    width: 700px;
+  }
+  .app {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
   .container {
     width: 1200px;
   }
+  .value {
+    width: 720px;
+  }
+  .app {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 1601px) {
   .container {
     width: 1600px;
+  }
+  .value {
+    width: 1000px;
+  }
+  .app {
+    width: 600px;
   }
 }
 
@@ -95,6 +149,31 @@ body {
 .container .cta a {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.today-page {
+  text-align: center;
+}
+
+.today-page .month-label {
+  font-size: 1.4em;
+}
+
+.today-page .today-number {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.today-page .year-number {
+  font-size: 1.4em;
 }
 
 /* * *      Theme      * * */
@@ -142,6 +221,20 @@ section#development {
   background-color: var(--sun);
 }
 
+.today-page {
+  background-color: var(--sun);
+}
+
+.today-page .month-label {
+  background-color: var(--moon);
+  color: var(--sun);
+}
+
+.today-page .today-number {
+  background-color: var(--sun);
+  color: var(--moon);
+}
+
 /* * * *     End      * * * */
-/**********/
+/**************************/
 /*# sourceMappingURL=style.css.map */
