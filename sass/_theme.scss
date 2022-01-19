@@ -40,3 +40,14 @@ section{
         background-color: var(--sun);
     }
 }
+.today-page {
+    background-color: var(--sun);
+    .month-label {
+        background-color: var(--moon);
+        color: var(--sun);
+    }
+    .today-number {
+        background-color: var(--sun);
+        color           : var(--moon);
+    }
+}
