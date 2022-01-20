@@ -27,3 +27,19 @@ p{
         font-size: 1.4em;
     }
 }
+.month-page {
+    .month-label {
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .days-table {
+        .weekC {
+            text-align: center;
+        }
+        .dayC {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}

@@ -49,19 +49,73 @@ nav ul#mainMenu li {
   display: block;
 }
 
+.app {
+  margin: 2em 0;
+}
+
+.today-page {
+  margin: 2em 0;
+}
+
 .today-page .month-label {
   display: block;
   padding: 0.5em;
 }
 
 .today-page .today-number {
+  min-width: 1.135em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 1em;
   display: block;
+  margin: 0.5em auto;
 }
 
 .today-page .year-number {
   display: block;
   padding: 0.5em;
+}
+
+.month-page {
+  margin: 2em 0;
+}
+
+.month-page .month-label {
+  display: block;
+  padding: 0.5em;
+}
+
+.month-page .days-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.month-page .days-table .weekC {
+  width: 12.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.month-page .days-table .weekC span {
+  display: block;
+}
+
+.month-page .days-table .dayC {
+  width: 12.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.month-page .days-table .dayC span {
+  display: block;
 }
 
 section {
@@ -76,11 +130,27 @@ section h2 {
   .container {
     width: 100%;
   }
+  .days-table .weekC {
+    height: 12.5vw;
+    line-height: 12.5vw;
+  }
+  .days-table .dayC {
+    height: 12.5vw;
+    line-height: 12.5vw;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 640px) {
   .container {
     width: 90%;
+  }
+  .days-table .weekC {
+    height: 11.25vw;
+    line-height: 11.25vw;
+  }
+  .days-table .dayC {
+    height: 11.25vw;
+    line-height: 11.25vw;
   }
 }
 
@@ -88,9 +158,32 @@ section h2 {
   .container {
     width: 640px;
   }
+  .app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .today-page {
+    width: 320px;
+  }
+  .month-page {
+    width: 320px;
+  }
+  .month-page .days-table .weekC {
+    height: 40px;
+    line-height: 40px;
+  }
+  .month-page .days-table .dayC {
+    height: 40px;
+    line-height: 40px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+/*-- All Under 1024 --*/
+@media screen and (max-width: 1024px) {
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -99,9 +192,32 @@ section h2 {
   }
 }
 
+/*-- / All Under 1024 --*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     width: 768px;
+  }
+  .app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .today-page {
+    width: 380px;
+  }
+  .month-page {
+    width: 380px;
+  }
+  .month-page .days-table .weekC {
+    height: 48px;
+    line-height: 48px;
+  }
+  .month-page .days-table .dayC {
+    height: 48px;
+    line-height: 48px;
   }
 }
 
@@ -115,6 +231,19 @@ section h2 {
   .app {
     width: 320px;
   }
+  .month-page {
+    /*.month-label {
+
+        }*/
+  }
+  .month-page .days-table .weekC {
+    height: 40px;
+    line-height: 40px;
+  }
+  .month-page .days-table .dayC {
+    height: 40px;
+    line-height: 40px;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
@@ -127,6 +256,19 @@ section h2 {
   .app {
     width: 480px;
   }
+  .month-page {
+    /*.month-label {
+
+        }*/
+  }
+  .month-page .days-table .weekC {
+    height: 60px;
+    line-height: 60px;
+  }
+  .month-page .days-table .dayC {
+    height: 60px;
+    line-height: 60px;
+  }
 }
 
 @media screen and (min-width: 1601px) {
@@ -138,6 +280,14 @@ section h2 {
   }
   .app {
     width: 600px;
+  }
+  .month-page .days-table .weekC {
+    height: 75px;
+    line-height: 75px;
+  }
+  .month-page .days-table .dayC {
+    height: 75px;
+    line-height: 75px;
   }
 }
 
@@ -174,6 +324,21 @@ p {
 
 .today-page .year-number {
   font-size: 1.4em;
+}
+
+.month-page .month-label {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.month-page .days-table .weekC {
+  text-align: center;
+}
+
+.month-page .days-table .dayC {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* * *      Theme      * * */
@@ -231,10 +396,31 @@ section#development {
 }
 
 .today-page .today-number {
+  /*background-color: var(--sun);
+        color           : var(--moon);*/
+  background-color: var(--main);
+  color: var(--dMoon);
+}
+
+.month-page {
   background-color: var(--sun);
-  color: var(--moon);
+}
+
+.month-page .month-label {
+  background-color: var(--moon);
+  color: var(--sun);
+}
+
+.month-page .weekC {
+  background-color: var(--oGround);
+  color: var(--uGround);
+}
+
+.month-page .dayC.today {
+  background-color: var(--main);
+  color: var(--dMoon);
 }
 
 /* * * *     End      * * * */
-/**************************/
+/********************************/
 /*# sourceMappingURL=style.css.map */

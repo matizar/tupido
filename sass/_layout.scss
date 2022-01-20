@@ -34,18 +34,51 @@ nav{
         }
     }
 }
+.app{
+    margin: 2em 0;
+}
 .today-page{
+    margin: 2em 0;
     .month-label{
         display: block;
         padding: 0.5em;
     }
     .today-number{
+        min-width: 1.135em;
+        width: fit-content;
         padding: 1em;
         display: block;
+        margin: 0.5em auto;
     }
     .year-number{
         display: block;
         padding: 0.5em;
+    }
+}
+.month-page{
+    margin: 2em 0;
+    .month-label {
+        display: block;
+        padding: 0.5em;
+    }
+    .days-table{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .weekC{
+            width     : 12.5%;
+            box-sizing: border-box;
+            span {
+                display: block;
+            }
+        }
+        .dayC{
+            width: 12.5%;
+            box-sizing: border-box;
+            span{
+                display: block;
+            }
+        }
     }
 }
 section{
@@ -58,26 +91,106 @@ section{
     .container{
         width: 100%;
     }
+    .days-table {
+        .weekC {
+            height     : 12.5vw;
+            line-height: 12.5vw;
+        }
+
+        .dayC {
+            height     : 12.5vw;
+            line-height: 12.5vw;
+
+            //span {}
+        }
+    }
 }
 @media screen and(min-width: 481px)and(max-width: 640px){
     .container {
         width: 90%;
+    }
+    .days-table {
+        .weekC {
+            height     : 11.25vw;
+            line-height: 11.25vw;
+        }
+
+        .dayC {
+            height     : 11.25vw;
+            line-height: 11.25vw;
+
+            //span {}
+        }
     }
 }
 @media screen and(min-width: 641px)and(max-width: 768px) {
     .container {
         width: 640px;
     }
+    .app {
+        display        : flex;
+        justify-content: space-evenly;
+    }
+
+    .today-page {
+        width: 320px;
+    }
+
+    .month-page {
+        width: 320px;
+
+        .days-table {
+            .weekC {
+                height     : 40px;
+                line-height: 40px;
+            }
+
+            .dayC {
+                height     : 40px;
+                line-height: 40px;
+
+                //span {}
+            }
+        }
+    }
 }
-@media screen and(max-width: 768px) {
+
+/*-- All Under 1024 --*/
+@media screen and(max-width: 1024px) {
     .row {
         flex-direction: column;
     }
 }
+/*-- / All Under 1024 --*/
+
 @media screen and(min-width: 769px)and(max-width: 1024px) {
     .container {
         width: 768px;
     }
+    .app{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .today-page{
+        width: 380px;
+    }
+    .month-page{
+        width: 380px;
+        .days-table {
+            .weekC {
+                height     : 48px;
+                line-height: 48px;
+            }
+
+            .dayC {
+                height     : 48px;
+                line-height: 48px;
+
+                //span {}
+            }
+        }
+    }
+
 }
 @media screen and(min-width: 1025px)and(max-width: 1200px) {
     .container {
@@ -89,6 +202,25 @@ section{
     .app{
         width: 320px;
     }
+    .month-page {
+
+    /*.month-label {
+
+        }*/
+    .days-table {
+        .weekC {
+            height     : 40px;
+            line-height: 40px;
+        }
+
+        .dayC {
+            height     : 40px;
+            line-height: 40px;
+
+            //span {}
+        }
+    }
+}
 }
 @media screen and(min-width: 1201px)and(max-width: 1600px) {
     .container {
@@ -99,6 +231,24 @@ section{
     }
     .app {
         width: 480px;
+    }
+    .month-page {
+        /*.month-label {
+
+        }*/
+        .days-table {
+            .weekC {
+                height     : 60px;
+                line-height: 60px;
+            }
+
+            .dayC {
+                height     : 60px;
+                line-height: 60px;
+
+                //span {}
+            }
+        }
     }
 }
 @media screen and(min-width: 1601px){
@@ -111,4 +261,18 @@ section{
     .app {
         width: 600px;
     }
+    .month-page {
+        .days-table {
+            .weekC {
+                height: 75px;
+                line-height: 75px;
+            }
+            .dayC {
+                height: 75px;
+                line-height: 75px;
+                //span {}
+            }
+        }
+    }
+
 }
