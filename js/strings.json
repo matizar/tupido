@@ -1,7 +1,9 @@
 {
     "en":{
-        "monthLabel": "Month",
+        "dayLabel": "Day",
         "weekLabel": "Week",
+        "monthLabel": "Month",
+        "yearLabel": "Year",
         "months": [
             "",
             "MonthName01",
@@ -17,7 +19,7 @@
             "MonthName11",
             "MonthName12",
             "MonthName13",
-            "MonthName14"
+            "Year End Days"
         ],
         "week": [
             "",
@@ -30,11 +32,25 @@
             "DayName07",
             "DayName08",
             "DayName09"
+        ],
+        "week Code":[
+            "",
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II"
         ]
     },
     "es" :{
-        "monthLabel": "Mes",
+        "dayLabel": "Día",
         "weekLabel": "Semana",
+        "monthLabel": "Mes",
+        "yearLabel": "Año",
         "months": [
             "",
             "MonthName01",

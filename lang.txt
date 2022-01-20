@@ -1,5 +1,5 @@
 es-CO
-Queremos definir un calendario alternativo con 13 meses fijos de 28 días, retomando las propuestas anteriores sobre este tema y realizando cambios adicionales en la definición de estos.
+Queremos contar con el apoyo de la comunidad para definir un calendario alterno con 13 meses fijos de 28 días, retomando las propuestas anteriores sobre este tema y realizando cambios adicionales en la definición de estos.
 
 Creemos que se puede tener un impacto positivo al usar un calendario de 13 meses fijos de 28 días, se pueden hacer mejores cálculos en la planeación y la comparación de distintas actividades mes a mes.
 
@@ -7,6 +7,14 @@ Hoy en día, es frecuente que comparemos las actividades ocurridas durante un me
 
 Puede que resulte conveniente entrar a realizar mediciones en periodos de 28 días, pero esto no es algo que ocurra con frecuencia. los presupuestos se definen una vez al mes, los pagos ocurren una vez por mes y hay muchas otras actividades que están atadas al concepto de mes.
 
-Tenemos un calendario que se definió hace bastante tiempo, pero sentimos que se requieren ajustes. Personalmente no comparto la idea de que tengamos un mes llamado Julio, como "homenaje" al  político romano Julio César y además otro mes llamado "Agosto" por su nieto? el primer emperador romano. Así que además de la necesidad de re-definir el calendario para que los meses tengan la misma cantidad de sías, también propongo re-definir el nombre que usamos para referirnos a los meses.
+¿Qué hay sobre los meses?
 
-Queremos contar con tus ideas y tu apoyo para desarrollar un calendario de 13 meses con meses fijos de 28 días (4 semanas exactas), y uno o dos días adicionales,  Contribuye al proyecto en Github
+Tenemos un calendario que se definió hace bastante tiempo, pero sentimos que se requieren ajustes. No comparto la idea de que tengamos un mes llamado Julio, como "homenaje" al  político romano Julio César y además otro mes llamado "Agosto" por su nieto? el primer emperador romano. Así que además de la necesidad de re-definir el calendario para que los meses tengan la misma cantidad de días, también propongo re-definir el nombre que usamos para referirnos a los meses.
+
+¿Cuándo comienza el año?
+
+Proponemos que el día de inicio de cada año nuevo se establezca también en función al sol, en este caso hemos tomado el solsticio de invierno.
+
+Únete al proyecto
+
+Queremos contar con tus ideas y tu apoyo para desarrollar un calendario de 13 meses con meses fijos de 28 días (4 semanas exactas), y uno o dos días adicionales,  Contribuye o aporta tus comentarios en la discusión del proyecto en Github.

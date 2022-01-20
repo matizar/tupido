@@ -47,7 +47,26 @@ section{
         color: var(--sun);
     }
     .today-number {
-        background-color: var(--sun);
-        color           : var(--moon);
+        /*background-color: var(--sun);
+        color           : var(--moon);*/
+        background-color: var(--main);
+        color           : var(--dMoon);
+    }
+}
+.month-page {
+    background-color: var(--sun);
+    .month-label {
+        background-color: var(--moon);
+        color : var(--sun);
+    }
+    .weekC{
+        background-color: var(--oGround);
+        color: var(--uGround);
+    }
+    .dayC{
+        &.today{
+            background-color: var(--main);
+            color: var(--dMoon);
+        }
     }
 }
